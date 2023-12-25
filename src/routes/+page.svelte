@@ -5,8 +5,8 @@
 <div class="relative flex flex-col justify-center h-full w-full">
 	<Particles />
 
-	<div class="pointer-events-none absolute inset-0 -z-10 -mx-28 overflow-hidden" aria-hidden>
-		<div class="absolute bottom-0 left-1/2 -z-10 -translate-x-1/2">
+	<div class="pointer-events-none absolute inset-0 -z-10 overflow-hidden" aria-hidden>
+		<div class="absolute top-0 left-1/2 -z-10 -translate-x-1/2">
 			<img class="max-w-none" src="/glow-top.svg" alt="" width="2146" height="774" />
 		</div>
 
