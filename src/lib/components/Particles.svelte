@@ -13,6 +13,13 @@
 		alpha: [from: number, to: number];
 	}
 
+	let className: string;
+	export { className as class };
+
+	export let density = 30;
+	export let speed = 50;
+	export let easing = 50;
+
 	let container: HTMLDivElement;
 	let canvas: HTMLCanvasElement;
 	let context: CanvasRenderingContext2D;
@@ -46,7 +53,7 @@
 		context.scale(dpr, dpr);
 		context.clearRect(0, 0, width, height);
 
-		for (let i = 0; i < 50; i++) {
+		for (let i = 0; i < density; i++) {
 			draw(circle());
 		}
 	}
@@ -106,8 +113,8 @@
 
 			current.x += current.dx;
 			current.y += current.dy;
-			current.translateX += (mouse.x / (50 / current.magnetism) - current.translateX) / 50;
-			current.translateY += (mouse.y / (50 / current.magnetism) - current.translateY) / 50;
+			current.translateX += (mouse.x / (speed / current.magnetism) - current.translateX) / easing;
+			current.translateY += (mouse.y / (speed / current.magnetism) - current.translateY) / easing;
 
 			if (
 				current.x < -current.size ||
@@ -142,6 +149,6 @@
 
 <svelte:window on:mousemove={onMouseMove} on:resize={init} />
 
-<div class="absolute inset-0 -z-10" aria-hidden bind:this={container}>
+<div class={className} aria-hidden bind:this={container}>
 	<canvas bind:this={canvas}></canvas>
 </div>
