@@ -1,0 +1,7 @@
+.git
+.vscode
+.DS_Store
+*.md
+.dockerignore
+.gitignore
+node_modules
