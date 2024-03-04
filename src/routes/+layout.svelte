@@ -3,6 +3,7 @@
 	import dayjs from "dayjs";
 	import localizedFormat from "dayjs/plugin/localizedFormat";
 	import { ModeWatcher } from "mode-watcher";
+	import Notifications from "$lib/components/Notifications.svelte";
 
 	dayjs.extend(localizedFormat);
 </script>
@@ -20,5 +21,5 @@
 	<!-- <Footer /> -->
 </div>
 
-<!-- <Notifications /> -->
+<Notifications />
 <!-- <Toaster /> -->
