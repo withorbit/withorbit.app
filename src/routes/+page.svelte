@@ -1,5 +1,6 @@
 <script lang="ts">
 	import Hero from "$lib/components/home/Hero.svelte";
+	import Install from "$lib/components/home/Install.svelte";
 	import Particles from "$lib/components/Particles.svelte";
 </script>
 
@@ -22,4 +23,4 @@
 	<div class="py-8 md:py-12"></div>
 </div>
 
-<!-- ... -->
+<Install />
