@@ -15,6 +15,7 @@
 	"dependencies": {
 		"bits-ui": "^0.18.4",
 		"clsx": "^2.1.0",
+		"dayjs": "^1.11.10",
 		"formsnap": "^0.5.1",
 		"lucide-svelte": "^0.341.0",
 		"mode-watcher": "^0.2.1",

@@ -1,6 +1,10 @@
 <script lang="ts">
 	import "../app.css";
+	import dayjs from "dayjs";
+	import localizedFormat from "dayjs/plugin/localizedFormat";
 	import { ModeWatcher } from "mode-watcher";
+
+	dayjs.extend(localizedFormat);
 </script>
 
 <ModeWatcher />
