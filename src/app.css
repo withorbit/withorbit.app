@@ -52,11 +52,30 @@
 	}
 }
 
+.lucide {
+	width: 1rem;
+	height: 1rem;
+}
+
 @layer base {
 	* {
 		@apply border-border;
 	}
 	body {
 		@apply bg-background text-foreground;
+	}
+}
+
+@layer components {
+	.btn,
+	.btn-sm {
+		@apply text-sm transition duration-150 ease-in-out;
+
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		border: 1px solid transparent;
+		border-radius: calc(infinity * 1px);
+		font-weight: 500;
 	}
 }
