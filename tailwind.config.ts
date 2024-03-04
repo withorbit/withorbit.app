@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+import plugin from "tailwindcss/plugin";
 
 export default {
 	darkMode: ["class"],
@@ -55,4 +56,17 @@ export default {
 			},
 		},
 	},
+	plugins: [
+		plugin(({ addUtilities }) => {
+			addUtilities({
+				".flex-center": {
+					alignItems: "center",
+					justifyContent: "center",
+				},
+				".translate-z-0": {
+					transform: "translateZ(0)",
+				},
+			});
+		}),
+	],
 } satisfies Config;
