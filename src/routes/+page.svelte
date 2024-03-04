@@ -1,4 +1,5 @@
 <script lang="ts">
+	import Hero from "$lib/components/home/Hero.svelte";
 	import Particles from "$lib/components/Particles.svelte";
 </script>
 
@@ -11,7 +12,7 @@
 	/>
 </svelte:head>
 
-<!-- <Hero /> -->
+<Hero />
 
 <div class="relative mx-auto max-w-6xl px-4 sm:px-6">
 	<div class="absolute inset-0 mx-auto max-w-6xl px-4 sm:px-6">
