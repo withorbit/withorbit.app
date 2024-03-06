@@ -4,6 +4,7 @@
 	import localizedFormat from "dayjs/plugin/localizedFormat";
 	import { ModeWatcher } from "mode-watcher";
 	import { Toaster } from "$lib/components/ui/sonner";
+	import Header from "$lib/components/Header.svelte";
 	import Notifications from "$lib/components/Notifications.svelte";
 
 	dayjs.extend(localizedFormat);
@@ -13,7 +14,7 @@
 <!-- <ProgressBar /> -->
 
 <div class="flex min-h-screen flex-col overflow-clip">
-	<!-- <Header /> -->
+	<Header />
 
 	<main class="grow">
 		<slot />
