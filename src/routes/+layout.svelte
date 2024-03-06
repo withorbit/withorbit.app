@@ -3,6 +3,7 @@
 	import dayjs from "dayjs";
 	import localizedFormat from "dayjs/plugin/localizedFormat";
 	import { ModeWatcher } from "mode-watcher";
+	import { Toaster } from "$lib/components/ui/sonner";
 	import Notifications from "$lib/components/Notifications.svelte";
 
 	dayjs.extend(localizedFormat);
@@ -22,4 +23,4 @@
 </div>
 
 <Notifications />
-<!-- <Toaster /> -->
+<Toaster />
