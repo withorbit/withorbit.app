@@ -4,6 +4,7 @@
 	import localizedFormat from "dayjs/plugin/localizedFormat";
 	import { ModeWatcher } from "mode-watcher";
 	import { Toaster } from "$lib/components/ui/sonner";
+	import Footer from "$lib/components/Footer.svelte";
 	import Header from "$lib/components/Header.svelte";
 	import Notifications from "$lib/components/Notifications.svelte";
 
@@ -20,7 +21,7 @@
 		<slot />
 	</main>
 
-	<!-- <Footer /> -->
+	<Footer />
 </div>
 
 <Notifications />
