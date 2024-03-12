@@ -12,7 +12,7 @@
 	} from "lucide-svelte";
 	import { mode, toggleMode } from "mode-watcher";
 	import { page } from "$app/stores";
-	import { notificationsOpen, settingsOpen } from "$lib/stores";
+	import { notificationsOpen } from "$lib/stores";
 	import { Button } from "./ui/button";
 	import * as DropdownMenu from "./ui/dropdown-menu";
 	import { Separator } from "./ui/separator";
@@ -60,7 +60,7 @@
 			{
 				label: "Settings",
 				icon: Settings,
-				onClick: () => ($settingsOpen = true),
+				href: "/settings/account",
 			},
 		],
 		[
